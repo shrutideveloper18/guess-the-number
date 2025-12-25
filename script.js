@@ -14,7 +14,7 @@ function checknumber(){
         document.getElementById("result").innerText="My Number is higher";
     }
     else if(usernumber==randomNumber){
-    document.getElementById("result").innerText="YOU GUESSED IT! \n You guessed it in "+count+" turns.";
+    document.getElementById("result").innerText="YOU WIN! \n You guessed it in "+count+" turns.";
     document.getElementById("replayBtn").style.display = "inline-block";
     document.getElementById("result").classList.add("win");
     
@@ -34,4 +34,5 @@ function replay(){
     document.getElementById("num").value = "";
     document.getElementById("replayBtn").style.display = "none"; // hide replay again
     alert("New Game Started! Guess again 🎯");
+
 }
